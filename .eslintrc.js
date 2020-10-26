@@ -10,6 +10,7 @@ module.exports = {
     'prettier/@typescript-eslint',
     'prettier/standard',
     'prettier/react',
+    "plugin:react-hooks/recommended"
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -24,6 +25,7 @@ module.exports = {
     '@typescript-eslint',
     'eslint-plugin-import-helpers',
     'prettier',
+    "react-hooks"
   ],
   rules: {
     'import-helpers/order-imports': [
@@ -39,6 +41,8 @@ module.exports = {
     'prettier/prettier': 'error',
     'space-before-function-paren': 'off',
     'react/prop-types': 'off',
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
   },
   settings: {
     react: {

@@ -1,13 +1,13 @@
 const defaultTheme = {
   fontSizes: {
-    title: '18px'
+    title: '4.2rem'
   },
   fontWeights: {
     normal: 400,
     subTitle: 500,
     link: 600,
     bold: 700,
-    title: 800
+    extraBold: 800
   },
   lineHeights: {
     body: 1.5,
@@ -37,10 +37,10 @@ const light = {
   type: 'light',
   colors: {
     background: '#d5d3d3',
-    body: '#44475A',
-    primary: '#282A36',
+    body: '#330000',
+    primary: '#d34836',
     secondary: '#FFC60D',
-    hoverColor: '#BD93F9',
+    hoverColor: '#0077B5',
     cyan: '#56CCF2',
     green: '#50FA7B',
     orange: '#FFB86C',

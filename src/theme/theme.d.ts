@@ -25,7 +25,7 @@ declare module 'styled-components' {
       subTitle: number
       link: number
       bold: number
-      title: number
+      extraBold: number
     }
     lineHeights: {
       body: number
