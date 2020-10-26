@@ -1,6 +1,17 @@
 import styled from 'styled-components'
+export const Container = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+  height: 80vh;
+  width: 100%;
+  @media (min-width: 768px) {
+    position: relative;
+  }
+`
 export const MainContent = styled.div`
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,18 +32,21 @@ export const Description = styled.div`
   align-items: flex-start;
   width: 100%;
 
+  /**SM devices*/
   @media only screen and (min-width: 768px) {
     width: 80%;
     margin: 5rem;
     padding-top: 5rem;
   }
+  /*MD devices*/
   @media only screen and (min-width: 992px) {
-    width: 50%;
-    margin: 5rem;
+    width: 100%;
+    margin: 1rem;
     padding-top: 5rem;
   }
+  /**XL devices*/
   @media only screen and (min-width: 1200px) {
-    width: 50%;
+    width: 40%;
     margin: 1rem;
     padding-top: 1rem;
   }
@@ -41,27 +55,26 @@ export const Title = styled.h1`
   display: flex;
   flex-wrap: wrap;
   font-weight: 900;
-  font-size: 7.6rem;
   text-transform: uppercase;
-  line-height: 8rem;
   font-style: normal;
   color: ${props => props.theme.colors.primary};
 
-  /**mobile */
-  @media only screen and (max-width: 600px) {
+  /**XS devices*/
+  @media (max-width: 600px) {
     font-size: 4.8rem;
     line-height: 5.8rem;
   }
-  /**tablets */
-  @media only screen and (min-width: 768px) {
+  /**SM devices */
+  @media (min-width: 600px) {
     font-size: 5rem;
     line-height: 6rem;
     margin-top: 5rem;
   }
-  @media only screen and (min-width: 1200px) {
-    font-size: 9.6rem;
-    line-height: 11.6rem;
-    width: 80%;
+  /**MD devices */
+  @media (min-width: 992px) {
+    font-size: 5rem;
+    line-height: 6rem;
+    margin-top: 5rem;
   }
 `
 export const SubTitle = styled.p`
@@ -69,26 +82,23 @@ export const SubTitle = styled.p`
   flex-wrap: wrap;
   font-style: normal;
   font-weight: 600;
-  font-size: 2.4rem;
-  line-height: 3.4rem;
   color: ${props => props.theme.colors.body};
 
   margin-top: 3rem;
   /**mobile */
-  @media only screen and (max-width: 600px) {
-    font-size: 1.8rem;
+  @media (max-width: 600px) {
+    font-size: 1.6rem !important;
     line-height: 3rem;
   }
   /**tablets */
-  @media only screen and (max-width: 968px) {
+  @media (max-width: 968px) {
     font-size: 2rem;
     line-height: 3rem;
   }
-
-  @media only screen and (min-width: 1200px) {
-    font-size: 2.8rem;
-    line-height: 3.8rem;
-    width: 90%;
+  @media (min-width: 992px) {
+    font-size: 2rem;
+    line-height: 3rem;
+    width: 70%;
   }
 `
 export const Logo = styled.img`
@@ -105,6 +115,8 @@ export const Logo = styled.img`
     width: 20rem;
     height: auto;
   }
+  @media only screen and (min-width: 992px) {
+  }
   @media only screen and (min-width: 1200px) {
     width: 30rem;
     height: auto;
@@ -116,11 +128,10 @@ export const Footer = styled.div`
   display: flex;
   justify-content: flex-end;
   align-items: center;
+
   div {
-    margin-right: 4rem;
-    margin-top: 4rem;
     a {
-      margin-bottom: 6rem;
+      margin-right: 10rem;
     }
   }
 
@@ -129,14 +140,33 @@ export const Footer = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+
+    div {
+      margin-top: 50rem;
+      a {
+        margin-right: 2rem;
+      }
+    }
   }
   /*medium*/
   @media only screen and (min-width: 768px) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
   }
   /*large*/
-  @media only screen and (min-width: 992px) {
+  @media only screen and (min-width: 992px) and (max-width: 1024px) {
+    div {
+      margin-right: 4rem;
+      margin-top: 0;
+      a {
+        margin-bottom: 6rem;
+      }
+    }
   }
-  /**extra large */
-  @media only screen and (min-width: 1200px) {
+`
+export const SocialIconsWrapper = styled.div`
+  @media (max-width: 600px) {
+    display: none;
   }
 `

@@ -14,11 +14,11 @@ export const Container = styled.div`
     font-weight: 300;
     margin-left: 0.3rem;
   }
-  @media (max-width: 1024px) {
-    margin-left: 8rem;
-  }
-  @media (max-width: 768px) {
+  @media only screen and (max-width: 768px) {
     display: none;
+  }
+  @media only screen and (min-width: 992px) {
+    margin-left: 8rem;
   }
 `
 export const Img = styled.img`

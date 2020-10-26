@@ -19,6 +19,13 @@ export const Nav = styled.nav`
   align-items: center;
   width: 100%;
   max-width: 100%;
-  margin-right: 20rem;
+  margin-right: 30rem;
   padding: 3rem;
+
+  @media only screen and (min-width: 992px) and (max-width: 1024px) {
+    margin-right: 0;
+  }
+  @media only screen and (min-width: 1200px) {
+    margin-right: 1rem;
+  }
 `

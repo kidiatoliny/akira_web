@@ -2,9 +2,9 @@ import styled from 'styled-components'
 
 export const NextButton = styled.div`
   a {
-    width: 80px;
-    height: 80px;
-    border-radius: 30px;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,7 +13,7 @@ export const NextButton = styled.div`
     display: flex;
     transition: background-color 0.3s;
     svg {
-      width: 24px;
+      width: 2.4rem;
       height: auto;
     }
     &:hover {
@@ -21,6 +21,11 @@ export const NextButton = styled.div`
       svg {
         filter: invert();
       }
+    }
+    @media (max-width: 600px) {
+      width: 5rem;
+      height: 5rem;
+      border-radius: 1rem;
     }
   }
 `
