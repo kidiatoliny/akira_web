@@ -22,7 +22,7 @@ const dark = {
     primary: '#FFC60D',
     secondary: '#282A36',
     body: '#FFFFFF',
-    hoverColor: '#56CCF2',
+    hoverColor: '#737373',
     cyan: '#56CCF2',
     green: '#50FA7B',
     orange: '#FFB86C',
@@ -36,11 +36,11 @@ const dark = {
 const light = {
   type: 'light',
   colors: {
-    background: '#d5d3d3',
+    background: '#fff',
     body: '#330000',
     primary: '#d34836',
-    secondary: '#FFC60D',
-    hoverColor: '#0077B5',
+    secondary: '#44475A',
+    hoverColor: '#737373',
     cyan: '#56CCF2',
     green: '#50FA7B',
     orange: '#FFB86C',

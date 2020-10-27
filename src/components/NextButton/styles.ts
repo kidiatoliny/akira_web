@@ -18,9 +18,6 @@ export const NextButton = styled.div`
     }
     &:hover {
       background: ${props => props.theme.colors.hoverColor};
-      svg {
-        filter: invert();
-      }
     }
     @media (max-width: 600px) {
       width: 5rem;

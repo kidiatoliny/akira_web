@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { ThemeContext } from 'styled-components'
 
-import NextButton from '../../components/Button/NextButton'
 import Layout from '../../components/Layout'
+import NextButton from '../../components/NextButton'
 import SocialIcons from '../../components/SocialIcons'
-import logo from './../../assets/home_illustration.svg'
+import logoDark from './../../assets/designer_dark.svg'
+import logoLight from './../../assets/designer.svg'
 import {
   MainContent,
   Description,
@@ -15,6 +17,7 @@ import {
   SocialIconsWrapper
 } from './styles'
 const Home: React.FC = () => {
+  const { type } = useContext(ThemeContext)
   return (
     <Layout>
       <Container>
@@ -30,7 +33,7 @@ const Home: React.FC = () => {
               <SocialIcons />
             </SocialIconsWrapper>
           </Description>
-          <Logo src={logo} alt="akira logo" />
+          <Logo src={type === 'dark' ? logoDark : logoLight} alt="akira logo" />
         </MainContent>
         <Footer>
           <NextButton link="/" />

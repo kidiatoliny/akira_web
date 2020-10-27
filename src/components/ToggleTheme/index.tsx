@@ -23,6 +23,7 @@ const ToggleTheme: React.FC<Props> = ({ onChange }) => {
         handleDiameter={20}
         onColor={shade(0.5, colors.primary)}
         offColor={shade(0.5, colors.primary)}
+        offHandleColor={colors.primary}
       />
       <Icon> ☾ </Icon>
     </Container>
