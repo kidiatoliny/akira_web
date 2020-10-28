@@ -1,6 +1,9 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
+  position: absolute;
+  top: 1.9rem;
+  right: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
