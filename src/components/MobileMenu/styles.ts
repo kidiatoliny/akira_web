@@ -8,5 +8,7 @@ export const Menu = styled.button`
     flex-wrap: wrap;
     border: none;
     background: none;
+    position: absolute;
+    left: 2rem;
   }
 `

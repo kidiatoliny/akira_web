@@ -41,11 +41,11 @@ export const Description = styled.div`
   /*MD devices*/
   @media only screen and (min-width: 992px) {
     width: 100%;
-    margin: 1rem;
+    margin: 15rem 0 0 10rem;
     padding-top: 5rem;
   }
   /**XL devices*/
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 1300px) {
     width: 40%;
     margin: 1rem;
     padding-top: 1rem;
@@ -124,47 +124,6 @@ export const Logo = styled.img`
   }
 `
 
-export const Footer = styled.div`
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-
-  div {
-    a {
-      margin-right: 10rem;
-    }
-  }
-
-  /*small*/
-  @media only screen and (max-width: 600px) {
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-
-    div {
-      margin-top: 50rem;
-      a {
-        margin-right: 2rem;
-      }
-    }
-  }
-  /*medium*/
-  @media only screen and (min-width: 768px) {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-  }
-  /*large*/
-  @media only screen and (min-width: 992px) and (max-width: 1024px) {
-    div {
-      margin-right: 4rem;
-      margin-top: 0;
-      a {
-        margin-bottom: 6rem;
-      }
-    }
-  }
-`
 export const SocialIconsWrapper = styled.div`
   @media (max-width: 600px) {
     display: none;

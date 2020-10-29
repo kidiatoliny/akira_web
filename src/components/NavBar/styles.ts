@@ -1,11 +1,14 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
+  position: fixed;
+  top: 0;
   display: flex;
   justify-content: space-between;
   width: 100%;
   align-items: center;
   height: 9rem;
+  z-index: 1000;
 
   @media (max-width: 768px) {
     display: block;

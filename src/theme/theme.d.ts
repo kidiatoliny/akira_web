@@ -16,6 +16,7 @@ declare module 'styled-components' {
       purple: string
       red: string
       yellow: string
+      accent: string
     }
     fontSizes: {
       title: string

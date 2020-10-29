@@ -21,6 +21,7 @@ const dark = {
     background: '#44475A',
     primary: '#FFC60D',
     secondary: '#282A36',
+    accent: '#282A36',
     body: '#FFFFFF',
     hoverColor: '#737373',
     cyan: '#56CCF2',
@@ -48,7 +49,8 @@ const light = {
     purple: '#BD93F9',
     red: '#FF5555',
     yellow: '#F1FA8C',
-    inverse: '#fff'
+    inverse: '#fff',
+    accent: '#ececec'
   }
 }
 
