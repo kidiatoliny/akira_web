@@ -12,7 +12,6 @@ import {
   Title,
   SubTitle,
   Logo,
-  Footer,
   Container,
   SocialIconsWrapper
 } from './styles'
@@ -27,7 +26,11 @@ const Home: React.FC = () => {
             <SubTitle>
               Atuamos em diversas areas do mercado com o objetivo de
               proporcionar aos nossos clientes uma experiencia inovadora no
-              conforto do seu lar
+              conforto do seu lar lorem Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Cumque officia ab obcaecati accusantium culpa
+              laudantium magnam! Voluptas tempora architecto laudantium harum
+              quod error fugit aliquid est perspiciatis. Necessitatibus, optio
+              delectus!
             </SubTitle>
             <SocialIconsWrapper>
               <SocialIcons />
@@ -35,10 +38,8 @@ const Home: React.FC = () => {
           </Description>
           <Logo src={type === 'dark' ? logoDark : logoLight} alt="akira logo" />
         </MainContent>
-        <Footer>
-          <NextButton link="/" />
-        </Footer>
       </Container>
+      <NextButton link="/services" />
     </Layout>
   )
 }
