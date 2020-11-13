@@ -8,7 +8,7 @@ import GlobalStyles from './theme/GlobalStyles'
 import usePersistedState from './utils/usePersistedState'
 
 const App: React.FC = () => {
-  const [theme, setTheme] = usePersistedState<DefaultTheme>('theme', lightTheme)
+  const [theme, setTheme] = usePersistedState<DefaultTheme>('theme', darkTheme)
   const handleToggleTheme = () => {
     setTheme(theme.type === 'dark' ? lightTheme : darkTheme)
   }
